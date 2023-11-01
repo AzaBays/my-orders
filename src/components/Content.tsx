@@ -32,9 +32,9 @@ export function Content() {
         <div className="content-body-column overflow overflow-y-auto overflow-scrollbar-none">
           <div className="content-body-column-header bg-primary">Новый ({newOrders.length})</div>
           <div className="content-body-column-body">
-            {newOrders.map((item) => (
+            {newOrders.length ? newOrders.map((item) => (
               <OrderCard order={item} key={item.id}/>
-            ))}
+            )) : (<div className="p-2 text-bold text-align-center bg-white radius-5">Заказов нет</div>)}
           </div>
         </div>
         <div className="content-body-column overflow overflow-y-auto overflow-scrollbar-none">
@@ -42,17 +42,17 @@ export function Content() {
             Заготовка ({prepareOrders.length})
           </div>
           <div className="content-body-column-body">
-            {prepareOrders.map((item) => (
+            {prepareOrders.length ? prepareOrders.map((item) => (
                 <OrderCard order={item} key={item.id}/>
-            ))}
+            )) : (<div className="p-2 text-bold text-align-center bg-white radius-5">Заказов нет</div>)}
           </div>
         </div>
         <div className="content-body-column overflow overflow-y-auto overflow-scrollbar-none">
           <div className="content-body-column-header bg-green">Готов ({ doneOrders.length })</div>
           <div className="content-body-column-body">
-            {doneOrders.map((item) => (
+            {doneOrders.length ? doneOrders.map((item) => (
                 <OrderCard order={item} key={item.id}/>
-            ))}
+            )) : (<div className="p-2 text-bold text-align-center bg-white radius-5">Заказов нет</div>)}
           </div>
         </div>
         <div className="content-body-column overflow overflow-y-auto overflow-scrollbar-none">
@@ -60,9 +60,9 @@ export function Content() {
             Курьер в пути ({sentOrders.length})
           </div>
           <div className="content-body-column-body">
-            {sentOrders.map((item) => (
+            {sentOrders.length ? sentOrders.map((item) => (
                 <OrderCard order={item} key={item.id}/>
-            ))}
+            )) : (<div className="p-2 text-bold text-align-center bg-white radius-5">Заказов нет</div>)}
           </div>
         </div>
       </div>

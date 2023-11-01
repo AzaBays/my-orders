@@ -1,0 +1,53 @@
+@import "../colors";
+
+.card {
+  border-radius: 5px;
+  background: #ffffff;
+  margin-bottom: 8px;
+  &-header {
+    padding: 12px;
+    border-bottom: 1px solid $gray-lighter;
+  }
+  &-body {
+    padding: 8px;
+    &-row {
+      display: grid;
+      grid-template-columns: 24px 1fr;
+      grid-gap: 4px;
+      margin-bottom: 12px;
+      &-title {
+        color: #000000;
+        font-weight: 500;
+        line-height: 21px;
+      }
+      & ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        & li {
+          font-size: 12px;
+          color: $gray-secondary;
+        }
+      }
+    }
+  }
+  &-footer {
+    border-top: 1px solid $gray-lighter;
+    padding: 12px;
+    & details {
+      & summary {
+        font-weight: 500;
+        color: $gray-primary;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        & i {
+          transition: transform 0.2s;
+        }
+      }
+      &[open] summary i {
+        transform: rotate(180deg);
+      }
+    }
+  }
+}

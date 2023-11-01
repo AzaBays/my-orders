@@ -1,0 +1,616 @@
+@import "../colors";
+
+// -------------------------         btn       ------------------------- //
+.btn {
+  min-width: 100px;
+  height: 36px;
+  padding: 4px 10px;
+  outline: none;
+  border: none;
+  text-align: center;
+  border-radius: 5px;
+  display: inline-block;
+  cursor: pointer;
+  &:focus {
+    outline: none;
+  }
+  &:disabled {
+    cursor: not-allowed;
+  }
+}
+
+.btn-black {
+  background: $black !important;
+}
+.btn-white {
+  background: $white !important;
+}
+.btn-primary {
+  background: $primary !important;
+}
+.btn-dark {
+  background: $dark !important;
+}
+.btn-gray-primary {
+  background: $gray-primary !important;
+}
+.btn-gray-secondary {
+  background: $gray-secondary !important;
+}
+.btn-gray-lighter {
+  background: $gray-lighter !important;
+}
+.btn-gray-light {
+  background: $gray-light !important;
+}
+.btn-red {
+  background: $red !important;
+}
+.btn-green {
+  background: $green !important;
+}
+.btn-yellow {
+  background: $yellow !important;
+}
+// -------------------------         btn       ------------------------- //
+
+// --------------------------      font      -------------------------- //
+.ls-05 {
+  letter-spacing: 0.5px;
+}
+.ls-075 {
+  letter-spacing: 0.75px;
+}
+.ls-1 {
+  letter-spacing: 1px;
+}
+.ls-125 {
+  letter-spacing: 1.25px;
+}
+.ls-150 {
+  letter-spacing: 1.5px;
+}
+.ls-2 {
+  letter-spacing: 2px;
+}
+
+.text-normal {
+  font-weight: normal !important;
+}
+.text-medium {
+  font-weight: 500 !important;
+}
+.text-bold {
+  font-weight: 700 !important;
+}
+
+.text-8 {
+  font-size: 8px !important;
+}
+.text-10 {
+  font-size: 10px !important;
+}
+.text-12 {
+  font-size: 12px !important;
+}
+.text-14 {
+  font-size: 14px !important;
+}
+.text-16 {
+  font-size: 16px !important;
+}
+.text-18 {
+  font-size: 18px !important;
+}
+.text-20 {
+  font-size: 20px !important;
+}
+.text-22 {
+  font-size: 22px !important;
+}
+.text-24 {
+  font-size: 24px !important;
+}
+.text-26 {
+  font-size: 26px !important;
+}
+.text-28 {
+  font-size: 28px !important;
+}
+.text-30 {
+  font-size: 30px !important;
+}
+.text-32 {
+  font-size: 32px !important;
+}
+
+.lh-10 {
+  line-height: 10px !important;
+}
+.lh-12 {
+  line-height: 12px !important;
+}
+.lh-14 {
+  line-height: 14px !important;
+}
+.lh-16 {
+  line-height: 16px !important;
+}
+.lh-18 {
+  line-height: 18px !important;
+}
+.lh-20 {
+  line-height: 20px !important;
+}
+.lh-22 {
+  line-height: 22px !important;
+}
+.lh-24 {
+  line-height: 24px !important;
+}
+.lh-26 {
+  line-height: 26px !important;
+}
+.lh-28 {
+  line-height: 28px !important;
+}
+.lh-32 {
+  line-height: 32px !important;
+}
+
+.text-uppercase {
+  text-transform: uppercase !important;
+}
+.text-capitalize {
+  text-transform: capitalize !important;
+}
+
+.text-align-center {
+  text-align: center !important;
+}
+.text-align-left {
+  text-align: left !important;
+}
+.text-align-right {
+  text-align: right !important;
+}
+
+.text-italic {
+  font-style: italic;
+}
+.text-underline {
+  text-decoration: underline;
+}
+
+.text-overflow-ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.text-overflow-nowrap {
+  white-space: nowrap;
+}
+.text-nowrap {
+  white-space: nowrap;
+}
+.text-wrap {
+  white-space: normal !important;
+}
+
+.text-decoration-black {
+  text-decoration-color: $black !important;
+}
+.text-decoration-white {
+  text-decoration-color: $white !important;
+}
+.text-decoration-primary {
+  text-decoration-color: $primary !important;
+}
+.text-decoration-dark {
+  text-decoration-color: $dark !important;
+}
+.text-decoration-gray-primary {
+  text-decoration-color: $gray-primary !important;
+}
+.text-decoration-gray-secondary {
+  text-decoration-color: $gray-secondary !important;
+}
+.text-decoration-gray-lighter {
+  text-decoration-color: $gray-lighter !important;
+}
+.text-decoration-gray-light {
+  text-decoration-color: $gray-light !important;
+}
+.text-decoration-red {
+  text-decoration-color: $red !important;
+}
+.text-decoration-green {
+  text-decoration-color: $green !important;
+}
+.text-decoration-yellow {
+  text-decoration-color: $yellow !important;
+}
+.text-decoration-none {
+  text-decoration-color: unset !important;
+  &:hover {
+    text-decoration: none !important;
+  }
+}
+
+.text-black {
+  color: $black !important;
+}
+.text-white {
+  color: $white !important;
+}
+.text-primary {
+  color: $primary !important;
+}
+.text-dark {
+  color: $dark !important;
+}
+.text-gray-primary {
+  color: $gray-primary !important;
+}
+.text-gray-secondary {
+  color: $gray-secondary !important;
+}
+.text-gray-lighter {
+  color: $gray-lighter !important;
+}
+.text-gray-light {
+  color: $gray-light !important;
+}
+.text-red {
+  color: $red !important;
+}
+.text-green {
+  color: $green !important;
+}
+.text-yellow {
+  color: $yellow !important;
+}
+
+.bg-none {
+  background: none !important;
+}
+.bg-black {
+  background: $black !important;
+}
+.bg-white {
+  background: $white !important;
+}
+
+.bg-primary {
+  background: $primary !important;
+}
+.bg-dark {
+  background: $dark !important;
+}
+.bg-gray-primary {
+  background: $gray-primary !important;
+}
+.bg-gray-lighter {
+  background: $gray-lighter !important;
+}
+.bg-gray-light {
+  background: $gray-light !important;
+}
+.bg-gray-secondary {
+  background: $gray-secondary !important;
+}
+.bg-red {
+  background: $red !important;
+}
+.bg-green {
+  background: $green !important;
+}
+.bg-green-secondary {
+  background: $green-secondary !important;
+}
+.bg-yellow {
+  background: $yellow !important;
+}
+
+.cursor-pointer {
+  cursor: pointer !important;
+}
+
+.text-clamp {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.text-clamp-1 {
+  -webkit-line-clamp: 1;
+}
+.text-clamp-2 {
+  -webkit-line-clamp: 2;
+}
+.text-clamp-3 {
+  -webkit-line-clamp: 3;
+}
+
+.select-bg-gray-lighter > div {
+  background: $gray-lighter;
+}
+
+// --------------------------      font      -------------------------- //
+
+// --------------------------   positions    -------------------------- //
+.position-relative {
+  position: relative !important;
+}
+.position-absolute {
+  position: absolute !important;
+}
+.position-sticky {
+  position: sticky !important;
+}
+// --------------------------   positions    -------------------------- //
+
+// --------------------------   overflow     -------------------------- //
+.overflow {
+  scrollbar-color: rgba(0, 0, 0, 0.3) rgba(0, 0, 0, 0.1);
+  scrollbar-width: thin;
+  &::-webkit-scrollbar {
+    width: 0;
+    background: transparent;
+  }
+  &::-webkit-scrollbar {
+    width: 5px;
+    height: 100%;
+  }
+  &::-webkit-scrollbar:horizontal {
+    width: 100%;
+    height: 5px;
+  }
+  &::-webkit-scrollbar-track {
+    background-color: $gray-light;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: opacify($primary, 0.6);
+    border-radius: 5px;
+  }
+  &::-webkit-scrollbar-thumb:horizontal {
+    background-color: opacify($primary, 0.6);
+    border-radius: 5px;
+  }
+}
+.overflow-alt {
+  scrollbar-color: rgba(0, 0, 0, 0.3) rgba(0, 0, 0, 0.1);
+  scrollbar-width: thin;
+  &::-webkit-scrollbar {
+    width: 0;
+    background: transparent;
+  }
+  &::-webkit-scrollbar {
+    width: 8px;
+    height: 100%;
+  }
+  &::-webkit-scrollbar:horizontal {
+    width: 100%;
+    height: 8px;
+  }
+  &::-webkit-scrollbar-track {
+    background-color: rgba(107, 119, 140, 0.3);
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: opacify($primary, 0.6);
+    border-radius: 5px;
+  }
+  &::-webkit-scrollbar-thumb:horizontal {
+    background-color: opacify($primary, 0.6);
+    border-radius: 5px;
+  }
+}
+.overflow-auto {
+  overflow: auto !important;
+}
+.overflow-y-auto {
+  overflow-y: auto !important;
+}
+.overflow-x-auto {
+  overflow-x: auto !important;
+}
+.overflow-hidden {
+  overflow: hidden !important;
+}
+.overflow-scrollbar-none {
+  &::-webkit-scrollbar {
+    width: 0 !important;
+  }
+}
+// --------------------------   overflow     -------------------------- //
+
+// --------------------------    borders     -------------------------- //
+.border-all-1 {
+  border: 1px solid transparent;
+}
+.border-all-2 {
+  border: 2px solid transparent;
+}
+.border-all-3 {
+  border: 3px solid transparent;
+}
+.border-left-1,
+.border-x-1 {
+  border-left: 1px solid transparent;
+}
+.border-left-2,
+.border-x-2 {
+  border-left: 2px solid transparent;
+}
+.border-left-3,
+.border-x-3 {
+  border-left: 3px solid transparent;
+}
+.border-top-1,
+.border-y-1 {
+  border-top: 1px solid transparent;
+}
+.border-top-2,
+.border-y-2 {
+  border-top: 2px solid transparent;
+}
+.border-top-3,
+.border-y-3 {
+  border-top: 3px solid transparent;
+}
+.border-right-1,
+.border-x-1 {
+  border-right: 1px solid transparent;
+}
+.border-right-2,
+.border-x-2 {
+  border-right: 2px solid transparent;
+}
+.border-right-3,
+.border-x-3 {
+  border-right: 3px solid transparent;
+}
+.border-bottom-1,
+.border-y-1 {
+  border-bottom: 1px solid transparent;
+}
+.border-bottom-2,
+.border-y-2 {
+  border-bottom: 2px solid transparent;
+}
+.border-bottom-3,
+.border-y-3 {
+  border-bottom: 3px solid transparent;
+}
+.border-dashed-all-1 {
+  border: 1px dashed transparent;
+}
+.border-dashed-all-2 {
+  border: 2px dashed transparent;
+}
+.border-dashed-all-3 {
+  border: 3px dashed transparent;
+}
+.border-dashed-left-1,
+.border-dashed-x-1 {
+  border-left: 1px dashed transparent;
+}
+.border-dashed-left-2,
+.border-dashed-x-2 {
+  border-left: 2px dashed transparent;
+}
+.border-dashed-left-3,
+.border-dashed-x-3 {
+  border-left: 3px dashed transparent;
+}
+.border-dashed-top-1,
+.border-dashed-y-1 {
+  border-top: 1px dashed transparent;
+}
+.border-dashed-top-2,
+.border-dashed-y-2 {
+  border-top: 2px dashed transparent;
+}
+.border-dashed-top-3,
+.border-dashed-y-3 {
+  border-top: 3px dashed transparent;
+}
+.border-dashed-right-1,
+.border-dashed-x-1 {
+  border-right: 1px dashed transparent;
+}
+.border-dashed-right-2,
+.border-dashed-x-2 {
+  border-right: 2px dashed transparent;
+}
+.border-dashed-right-3,
+.border-dashed-x-3 {
+  border-right: 3px dashed transparent;
+}
+.border-dashed-bottom-1,
+.border-dashed-y-1 {
+  border-bottom: 1px dashed transparent;
+}
+.border-dashed-bottom-2,
+.border-dashed-y-2 {
+  border-bottom: 2px dashed transparent;
+}
+.border-dashed-bottom-3,
+.border-dashed-y-3 {
+  border-bottom: 3px dashed transparent;
+}
+.border-left-none {
+  border-left: none !important;
+}
+.border-right-none {
+  border-right: none !important;
+}
+.border-top-none {
+  border-top: none !important;
+}
+.border-bottom-none {
+  border-bottom: none !important;
+}
+.border-none {
+  border: none !important;
+}
+
+.border-black {
+  border-color: $black !important;
+}
+.border-white {
+  border-color: $white !important;
+}
+.border-primary {
+  border-color: $primary !important;
+}
+.border-dark {
+  border-color: $dark !important;
+}
+.border-gray-primary {
+  border-color: $gray-primary !important;
+}
+.border-gray-lighter {
+  border-color: $gray-lighter !important;
+}
+.border-gray-light {
+  border-color: $gray-light !important;
+}
+.border-gray-secondary {
+  border-color: $gray-secondary !important;
+}
+.border-red {
+  border-color: $red !important;
+}
+.border-green {
+  border-color: $green !important;
+}
+.border-yellow {
+  border-color: $yellow !important;
+}
+
+.radius-5 {
+  border-radius: 5px !important;
+}
+.radius-10 {
+  border-radius: 10px !important;
+}
+.radius-15 {
+  border-radius: 15px !important;
+}
+.radius-50 {
+  border-radius: 50% !important;
+}
+// --------------------------    borders     -------------------------- //
+
+// --------------------------    transform   -------------------------- //
+.rotate25 {
+  transform: rotate(25deg);
+}
+.rotate-25 {
+  transform: rotate(25deg);
+}
+// --------------------------    transform   -------------------------- //
+
+
+
